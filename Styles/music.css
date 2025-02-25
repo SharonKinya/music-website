@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 224, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.music-player {
+    background: linear-gradient(white 0%, rgb(250, 148, 165) 90%);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5em;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+nav .circle {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: rgb(252, 174, 184);
+    color: white;
+    box-shadow: 0 5px 10px rgba(255,26,26,0.22);
+}
+nav .circle:hover {
+    background: white;
+    color: rgb(252, 174, 184);
+}
+.music-player h1 {
+    color: black;
+}
+    
+.music-player p {
+    font-size: 14px;
+    color: rgb(28, 27, 27);
+    margin-bottom: 20px;
+}
+
+.song-img {
+    width: 14em;
+    border: 0.3em solid white;
+    border-radius: 50%;
+    box-shadow: 0.8em 0.8em 1.8em rgba(255,26,26,0.22);
+        
+}
+small {
+    color: white;
+}
+.timeline-slider {
+    margin: 2em auto;
+    max-width: 30em;
+}
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ranger-slider {
+    margin-top: 0.4em;
+    position: relative;
+    display: flex;
+    user-select: none;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0.4em;
+    background: linear-gradient(90deg,rgb(252, 174, 184), white);
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    background: rgb(252, 174, 184);
+    border: 8px solid white;
+    box-shadow: 0 5px 5px rgba(255,26,26,0.22);
+}
+.volume-slider {
+    max-width: 16em;
+    margin: 0.6em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volume-slider .slider::-webkit-slider-thumb {
+    width: 0;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls button {
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+    background-color: rgb(252, 174, 184);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    box-shadow:0 10px 20px rgba(255,26,26,0.22) ;
+    cursor: pointer;
+}
+.controls button:nth-child(3) {
+    transform: scale(1.5);
+    background: white;
+    color: rgb(252, 174, 184);
+}
+.controls button:hover {
+    background: white;
+    color: rgb(252, 174, 184);
+}
+.controls button:nth-child(3):hover {
+    background: rgb(252, 174, 184);
+    color: white;
+
+}
+@media screen and (max-width: 700px) {
+    .range-slider {
+        width: 100%;
+    }
+}
+

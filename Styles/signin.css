@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 224, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 10%;
+}
+.back-to-new {
+    color: black;
+    margin-left: 45%;
+    margin-top: 20%;
+    font-size: 14px;
+    text-decoration: none;
+}
+.container {
+    position: relative;
+    width: 750px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.sign-up,
+.log-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.sign-up {
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+
+
+}
+.log-in {
+    width: 50%;
+    z-index: 2;
+
+}
+form {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+h1 {
+    font-weight: bold;
+}
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 15px 0 20px;
+}
+input {
+    background-color: pink;
+    padding: 12px 15px;
+    margin: 8px 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+a {
+    color: pink;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+button {
+    color: white;
+    background-color: pink;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 55px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid pink;
+    outline: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+button:active {
+    transform: scale(0.90);
+}
+#signUp,
+#logIn {
+    background-color: transparent;
+    border: 2px solid white;
+}
+.container.right-panel-active .log-in {
+    transform: translateX(100%);
+
+}
+.container.right-panel-active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+.container.right-panel-active .overlay-container{
+    transform: translateX(-100%);
+}
+.overlay {
+    position: relative;
+    color: black;
+    background-color: pink;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform(0.6s ease-in-out);
+}
+.container.right-panel-active .overlay{
+    transform: translateX(50%);
+}
+.overlay-left,
+.overlay-right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform(0.6s ease-in-out);
+}
+.overlay-left {
+    transform: translateX(-20%);
+
+}
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+    
+}
+.container.right-panel-active .overlay-left{
+    transform: translateX(0);
+}
+.container.right-panel-active .overlay-right{
+    transform: translateX(20%);
+}
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+.forgot-password {
+    color: black;
+}
+
+
+.socials {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 25px 40px;
+    background-color: pink;
+    border-radius: 50%;
+    color: white;
+    box-shadow:0 10px 20px rgba(255,26,26,0.22) ;
+    cursor: pointer;
+} 
+ 
+
+
+
+

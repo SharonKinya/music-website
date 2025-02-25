@@ -1,0 +1,121 @@
+
+@media (max-width:992px) {
+    body {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        
+        
+    }
+  
+}
+@media (max-width:768px) {
+    body {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 12px;
+        
+    }
+   
+}
+@media (max-width:481px) {
+    body {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 10px;
+        
+       
+    }
+}
+.sections {
+    margin-bottom: 10px;
+}
+.top-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.top-line .more-pages {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 25px;
+    border: none;
+    background-color: #71a44f;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    box-shadow:0 10px 20px rgba(191, 245, 187, 0.22) ;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(0.90);
+}
+.top-line i {
+    margin-left: 4px;
+    color: white;
+}
+.container {
+    max-width: 1200px; 
+    position: relative; 
+}
+.container .loop {
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    margin-bottom: 20px;
+}
+.loop.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
+}
+.loop.dragging img {
+    pointer-events: none;
+}
+.loop img {
+    height: 150px;
+    width: calc(96.5% / 6);
+    border-radius: 5px;
+    margin-left: 2px;
+    object-fit: cover;
+}
+.loop img:first-child {
+    margin-left: 0;
+}
+.container i {
+    top: 25%;
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #71a44f;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    box-shadow:0 10px 20px rgba(191, 245, 187, 0.22) ;
+    cursor: pointer;
+    transform: translateY(25%);
+}
+.container i:first-child {
+   left: -14px;
+    display: none;
+}
+.container i:last-child {
+    right: -10px;
+}
+ @media screen and (max-width: 900px) {
+    .loop img {
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 550px) {
+    .loop img {
+        width:100%;
+    }
+} 

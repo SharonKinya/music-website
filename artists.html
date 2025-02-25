@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+
+        <title>Shades.com/general</title>
+
+        <link rel="stylesheet" href="Styles/general.css">
+        <link rel="stylesheet" href="Styles/header.css">
+        <link rel="stylesheet" href="Styles/sidebar.css">
+        <link rel="stylesheet" href="Styles/new.css">
+        <script src="https://kit.fontawesome.com/4caa35e403.js" crossorigin="anonymous"></script>
+   </head>
+
+   <body>
+    
+    <div class="header">
+        <div class="left-section">
+            <h1 class="name">Shades</h1>
+        </div>
+
+        <div class="middle-section">
+            <div class="search-box">
+                <div class="search-bar">
+                    <input type="text" id="input-box" 
+                    placeholder="Search Artists, Songs, Albums, Videos, etc" autocomplete="off">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="result-box">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+
+            <button class="btnLogin-popup">Login</button>
+
+            <div class="more-button">
+                <i class="fa-solid fa-bars" class="more-icon"></i>
+                <div class="tooltip">more</div>
+             </div>
+        </div>
+        
+    </div>
+    
+    <div class="sidebar">
+        <div class="music-link">
+            <h3>Music</h3>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-house"></i>
+                <a href="home.html"><span class="home">Home</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-music"></i>
+                <a href="songs.html"><span class="songs">Songs</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-video"></i>
+                <a href="videos.html"><span class="videos">Videos</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <a href="trending.html"><span class="trending">Trending</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-n"></i>
+                <a href="new.html"><span class="new">New</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-palette"></i>
+                <a href="artists.html"><span class="artists">Artists</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-p"></i>
+                <a href="playlists.html"><span class="playlists">Playlist</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-g"></i>
+                <a href="genres.html"><span class="genres">Genres</span></a>
+            </div>
+            
+        </div>
+
+        <div class="library-link">
+            <h3>Library</h3>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-plus"></i>
+                <a href="addplaylist.html"><span class="add-playlist">Add Playlist</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-heart"></i>
+                <a href="favourites.html"><span class="favourite">Favourites</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-music"></i>
+                <a href="myplaylist.html"><span class="my-playlist">My Playlist</span></a>
+            </div>
+
+        </div>
+
+        <div class="buzz-link">
+            <h3>Buzz</h3>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-star"></i>
+                <a href="recommended.html"><span class="recommended">Recommended</span></a>
+            </div>
+        </div>
+
+        <div class="podcast-link">
+            <h3>Podcast</h3>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-r"></i>
+                <a href="recommended.html"><span class="recommended">Recommended</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+           <h1  class="page-title">Page Title</h1>
+           <!-- <i class="fa-solid fa-music"></i>
+           <i class="fa-solid fa-magnifying-glass"></i>
+           <i class="fa-solid fa-headphones"></i>
+           <i class="fa-solid fa-angle-left"></i>
+           <i class="fa-solid fa-angle-right"></i> -->
+    </div>
+     
+
+     <!-- log in code -->
+     <div class="logInForm">
+        <div class="log-in-container">
+
+            <span class="icon-close"><i class="fa-solid fa-angle-right"></i></span>
+
+            <div class="form-box login">
+                <h2>LogIn</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <input type="password" required>
+                        <label>password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember Me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Log In</button>
+                    <div class="signup">
+                        <p>Don't have an account?<a href="#" class="signup-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box signup">
+                <h2>SignUp</h2>
+                <form action="#">
+
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <input type="password" required>
+                        <label>password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I Agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                    <div class="signup">
+                        <p>Already have an account?<a href="#" class="login-link">Log In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+
+      <script src="JavaScript/autocomplete.js"></script>
+      <script src="JavaScript/loginpage.js"></script>
+    </body>
+</html>

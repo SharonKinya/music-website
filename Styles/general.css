@@ -1,0 +1,395 @@
+body {
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding-left: 250px;
+    padding-right:50px;
+    padding-top: 80px;
+    margin-bottom: 100px;
+}
+p, 
+div{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+hr {
+    opacity: 0.5;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-title {
+    display: block;
+    color: black;
+    margin: 10px;
+    padding: 0;
+    font-weight: bold;
+}
+.middle-buttons {
+    display: inline-flex;
+    margin-top: 2px;
+    cursor: pointer;
+    gap: 8px;
+}
+.like-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: #71a44f;
+    /* margin-left: 8px;
+    margin-right: 8px; */
+}
+.number-of-likes {
+    color: black;
+    font-size: 10px;
+    padding-left: 5px;
+    margin: 0;
+}
+.download-button,
+.play-button ,
+.share-button,
+.add-button,
+.more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 50%;
+    color: #71a44f;
+    box-shadow:0 10px 20px rgba(191, 245, 187, 0.22) ;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(0.90);
+}
+.download-button:hover,
+.play-button:hover ,
+.share-button:hover,
+.add-button:hover,
+.more-button:hover {
+    background-color: #71a44f;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+.tooltip {
+    position: absolute;
+    background-color: #71a44f;
+    color: white;
+    padding: 2px 8px;    
+    border-color: #71a44f;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 8px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    bottom: -17px;
+    white-space: nowrap;
+    z-index: 50;
+}
+.like-button:hover .tooltip,
+.comment-button:hover .tooltip,
+.views:hover .tooltip,
+.download-button:hover .tooltip,
+.play-button:hover .tooltip,
+.share-button:hover .tooltip,
+.add-button:hover .tooltip,
+.more-button:hover .tooltip {
+    opacity: 1;
+}
+.img-container {
+    position: relative;
+} 
+.views {
+    position: absolute;
+    padding: 1px 2px;
+    display: inline flex;
+    background-color: #71a44f;
+    color: white;
+    font-size: 8px;
+    bottom: 6px;
+    right: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.views i {
+    color: white;
+   margin-right: 3px;
+}
+.song-length{
+    position: absolute;
+    padding: 1px 4px;
+    background-color: #71a44f;
+    color: white;
+    font-size: 8px;
+    bottom: 6px;
+    right: 2px;
+    border-radius: 2px;
+}
+.top-100-songs,
+.top-100-videos {
+    border-color: #71a44f;
+    background-color: #71a44f;
+    color: white;
+    font-size: medium;
+    border-radius: 2px;
+    border-style: solid;
+    letter-spacing: 1px;
+    padding: 4px 8px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    right: 100px;
+}
+
+/* more button dropdown css */
+.more-button {
+    z-index: 997;
+}
+.sub-menu-wrap {
+    position: absolute;
+    top: 40px;
+    right: -195px;
+    width: 240px;
+    font-size: 14px;
+    max-height: 0px;
+    overflow: hidden; 
+    transition: max-height 0.5s;  
+}
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+.sub-menu {
+    background-color: #71a44f;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+}
+.song-dropdown-info {
+    display: flex;
+    align-items: center;
+}
+.song-dropdown-info h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin: 4px 0;
+    letter-spacing: 1px;
+
+}
+.song-dropdown-info p {
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.song-dropdown-info .song-dropdown-image {
+    margin-top: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin: 6px 0 4px;
+}
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 12px 0;
+}
+.sub-menu-link p {
+    width: 80%;
+    font-weight:400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: transform 0.5s ease;
+}
+.sub-menu-link:hover p {
+    font-weight: 600;
+    transform: translateY(-5px);
+}
+.sub-menu-link i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    color: #71a44f;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* css for the sign in/ log in page */
+.logInForm {
+    position: absolute;
+    margin-left: 200px;
+    z-index: 998;
+}
+.log-in-container {
+    position: relative;
+    width: 350px;
+    height: 440px;
+    background: white;
+    border: 2px solid rgba(255, 255,255,0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(165, 163, 163, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform.5s ease, height .4s ease;
+    
+}
+.log-in-container.active-popup{
+    transform: scale(1);
+}
+.log-in-container.active {
+    height: 480px;
+}
+.log-in-container .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #71a44f;
+    font-size: 1em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+.log-in-container .form-box  {
+    width: 100%;
+    padding: 40px;
+   
+}
+.log-in-container .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.log-in-container.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+.log-in-container .form-box.signup {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.log-in-container.active .form-box.signup {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.form-box h2 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+.form-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid gray;
+    margin: 30px 0;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-30%);
+    font-size: .9em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 50px;
+}
+.remember-forgot {
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.remember-forgot label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: black;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #71a44f;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 500;
+}
+.signup {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0;
+}
+.signup p a {
+    margin-left: 5px;
+    color: black;
+    font-weight: 600;
+}
+.signup p a:hover {
+    text-decoration: underline;
+}

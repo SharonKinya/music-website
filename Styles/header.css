@@ -1,0 +1,224 @@
+.header {
+    background-color: #71a44f;
+    /* border-bottom: 1px solid white; */
+    color: black;
+    left: 8px;
+    top: 0;
+    right: 8px;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 999;
+    border-radius: 5px;
+}
+/* @media (max-width:1200px) {
+    .name {
+        font-size: 24px;
+        background-color: red;
+     }
+    }
+
+@media (max-width:992px) {
+    .name {
+        font-size: 24px;
+        background-color: red;
+     }
+  
+}
+@media (max-width:768px) {
+    .name {
+        font-size: 18px;
+        background-color: red;
+     }
+   
+}
+@media (max-width:481px) {
+     .header .left-section {
+        width: 100px;
+    } 
+    .name {
+       font-size: 14px;
+       background-color: red;
+    }
+    
+} */
+.header .left-section {
+    width: 150px;
+    justify-content: start;
+    padding-left: 30px;
+
+    /* @media (max-width:1200px) {
+            width: 150px;
+    }
+    
+    @media (max-width:992px) {
+            width: 150px;
+    }
+    @media (max-width:768px) {
+            width: 100px;
+    }
+    @media (max-width:481px) {
+            width: 100px;
+    } */
+}
+.name {
+    color: white;
+}
+.header .middle-section {
+    flex: 1;
+    justify-content:center;
+    align-items: center;
+}
+.search-box {
+    width: 700px;
+    background-color: white;
+    color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+.search-box  .search-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+   
+}
+.search-bar input {
+    flex: 1;
+    background-color: transparent;
+    height: 10px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+::placeholder {
+    color: rgb(197, 196, 196);
+}
+.search-bar i {
+    color: #71a44f;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+.result-box {
+    position: absolute;
+    width: 700px;
+    background-color: white;
+    border-top: 1px solid rgb(252, 246, 246);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    max-height: 300px;
+    overflow-y: scroll;
+   
+}
+.result-box ul {
+    padding: 10px;
+}
+.result-box ul li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.result-box ul li:hover {
+    background-color: rgb(252, 246, 246);
+}
+
+
+.header .right-section {
+    width: 200px;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+
+    @media (max-width:992px) {
+            width: 200px;
+    }
+    @media (max-width:768px) {
+        width: 100px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    @media (max-width:481px) {
+       width: 100px;
+       padding-left: 5px;
+       padding-right: 5px;
+}
+}
+.notification-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #71a44f;
+    box-shadow:0 10px 20px rgba(255,26,26,0.22) ;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(0.90);
+
+@media (max-width:768px) {
+        display: none;
+}
+@media (max-width:481px) {
+        display: none;
+}
+}
+.notification-button:hover {
+    background-color: #71a44f;
+    color: white;
+}
+.tooltip {
+    position: absolute;
+    background-color: white;
+    color: #71a44f;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 8px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    bottom: -17px;
+    white-space: nowrap;
+}
+.notification-button:hover .tooltip {
+    opacity: 1;
+}  
+.btnLogin-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    background-color: white;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #71a44f;
+    font-weight: bold;
+    box-shadow:0 10px 20px rgba(191, 245, 187, 0.22) ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btnLogin-popup:hover {
+    background-color: #71a44f;
+    color: white;
+}
+
+

@@ -1,0 +1,90 @@
+.page-entity{
+    height: 70px;
+    display: flex;
+    flex-direction: row;  
+}
+.song-title,
+.type-of-song {
+    font-weight: bold;
+    cursor: pointer;
+}
+.song-writer {
+    font-size: smaller;
+    cursor: pointer;
+      
+}
+.left-section{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.left-section .serial-no {
+    font-weight: 600;
+    font-size: 16px;
+}
+.song-img {
+    width: 60px;
+    height: 60px;
+    border:1px solid white;
+    border-radius: 5px;
+    position: relative;
+}
+.play-button {
+    position: absolute;
+    bottom: -4px;
+    right: -8px;  
+    opacity: 0;  
+}
+.left-section:hover .play-button {
+    opacity: 1;
+}
+
+.middle-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-left: 20px;
+}
+.general-right-section{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1200px) {
+    body {
+        font-size: 14px;
+        padding: 70px 0px 0px;
+        width: 100%;
+    }   
+    }
+
+@media screen and (max-width:992px) {
+    body {
+        padding: 70px 0px 0px;
+        font-size: 14px;
+        width: 100%;
+    }
+  
+}
+@media screen and (max-width:768px) {
+    body {
+        padding: 70px 0px 0px;
+        font-size: 12px;
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width:481px) {
+    body {
+        padding: 70px 0px 0px;
+        font-size: 10px;
+        width: 100%;
+    }
+}
+

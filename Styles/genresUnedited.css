@@ -1,0 +1,209 @@
+body {
+    background-color: rgb(255, 224, 230);
+}
+a {
+    color: black;
+    margin-left: 45%;
+    margin-top: 20%;
+    font-size: 14px;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+.imgContainer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.slide_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 30px 0 30px;
+}
+.slide_div h1 {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+img {
+    height: 250px;
+    width: 150px;
+    border-radius: 20px;
+}
+.button {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    border-radius: 20px;
+}
+/* .button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+} */
+
+/* #slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1 {
+    width: 300px;
+    height: 420px;
+}
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2 {
+    width: 300px;
+    height: 420px;
+}
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3 {
+    width: 300px;
+    height: 420px;
+}
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4 {
+    width: 300px;
+    height: 420px;
+}
+#slider5:target ~ .imgContainer #img5,
+#slider5:target ~ .imgContainer #button5 {
+    width: 300px;
+    height: 420px;
+}
+#slider6:target ~ .imgContainer #img6,
+#slider6:target ~ .imgContainer #button6 {
+    width: 300px;
+    height: 420px;
+}
+#slider7:target ~ .imgContainer #img7,
+#slider7:target ~ .imgContainer #button7 {
+    width: 300px;
+    height: 420px;
+}
+#slider8:target ~ .imgContainer #img8,
+#slider8:target ~ .imgContainer #button8 {
+    width: 300px;
+    height: 420px;
+}
+#slider9:target ~ .imgContainer #img9,
+#slider9:target ~ .imgContainer #button9 {
+    width: 300px;
+    height: 420px;
+}
+#slider10:target ~ .imgContainer #img10,
+#slider10:target ~ .imgContainer #button10 {
+    width: 300px;
+    height: 420px;
+   
+}
+#slider12:target ~ .imgContainer #img12,
+#slider12:target ~ .imgContainer #button12 {
+    width: 300px;
+    height: 420px;
+}
+#slider13:target ~ .imgContainer #img13,
+#slider13:target ~ .imgContainer #button13 {
+    width: 300px;
+    height: 420px;
+}
+#slider14:target ~ .imgContainer #img14,
+#slider14:target ~ .imgContainer #button14 {
+    width: 300px;
+    height: 420px;
+}
+#slider15:target ~ .imgContainer #img15,
+#slider15:target ~ .imgContainer #button15 {
+    width: 300px;
+    height: 420px;
+}
+#slider16:target ~ .imgContainer #img16,
+#slider16:target ~ .imgContainer #button16 {
+    width: 300px;
+    height: 420px;
+}
+#slider17:target ~ .imgContainer #img17,
+#slider17:target ~ .imgContainer #button17 {
+    width: 300px;
+    height: 420px;
+}
+#slider18:target ~ .imgContainer #img18,
+#slider18:target ~ .imgContainer #button18 {
+    width: 300px;
+    height: 420px;
+}
+#slider19:target ~ .imgContainer #img19,
+#slider19:target ~ .imgContainer #button19 {
+    width: 300px;
+    height: 420px;
+}
+
+#slider1:target ~ .imgContainer {
+    left: 90px;
+}
+#slider2:target ~ .imgContainer {
+    left: 80px;
+}
+#slider3:target ~ .imgContainer {
+    left: 70px;
+}
+#slider4:target ~ .imgContainer {
+    left: 60px;
+}
+#slider5:target ~ .imgContainer {
+    left: 50px;
+}
+#slider6:target ~ .imgContainer {
+    left: 40px;
+}
+#slider7:target ~ .imgContainer {
+    left: 30px;
+}
+#slider8:target ~ .imgContainer {
+    left: 20px;
+}
+#slider9:target ~ .imgContainer {
+    left: 10px;
+}
+#slider10:target ~ .imgContainer {
+    left: 0px;
+}
+#slider11:target ~ .imgContainer {
+    left: -10px;
+}
+#slider12:target ~ .imgContainer {
+    left: -20px;
+}
+#slider13:target ~ .imgContainer {
+    left: -30px;
+}
+#slider14:target ~ .imgContainer {
+    left: -40px;
+}
+#slider15:target ~ .imgContainer {
+    left: -50px;
+}
+#slider16:target ~ .imgContainer {
+    left: -60px;
+}
+#slider17:target ~ .imgContainer {
+    left: -70px;
+}
+#slider18:target ~ .imgContainer {
+    left: -80px;
+}
+#slider19:target ~ .imgContainer {
+    left: -90px;
+}
+ */

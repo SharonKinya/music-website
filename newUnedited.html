@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+
+        <title>Starr.com/new</title>
+
+        <link rel="stylesheet" href="Styles/general.css">
+        <link rel="stylesheet" href="Styles/new.css">
+        <link rel="stylesheet" href="Styles/header.css">
+        <link rel="stylesheet" href="Styles/sidebar.css">
+        <script src="https://kit.fontawesome.com/4caa35e403.js" crossorigin="anonymous"></script>
+   </head>
+
+   <body>
+    <script src="JavaScript/new.js"></script>
+    <div class="header">
+        <div class="left-section">
+            <h1>Starr</h1>
+        </div>
+
+        <div class="middle-section">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Artists, Songs, Albums, Videos, etc">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="right-section">
+
+            <div class="notification-button">
+                <i class="fa-solid fa-bell" class="notification-icon"></i>
+                <div class="tooltip">notification bell</div>
+            </div>
+
+            <a href="signinform.html"><span class="log-in-form">Log in</span></a>
+        </div>
+        
+    </div>
+    
+    <div class="sidebar">
+        <div class="music-link">
+            <h3>Music</h3>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                Trending
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-n"></i>
+                <a href="new.html"><span class="new">New</span></a>
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-palette"></i>
+                Artist
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-video"></i>
+                Videos
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-p"></i>
+                Playlists
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-chart-simple"></i>
+                Charts
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-g"></i>
+                <a href="genres.html"><span class="genres">Genres</span></a>
+            </div>
+            
+        </div>
+
+        <div class="library-link">
+            <h3>Library</h3>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-plus"></i>
+                Add Playlist
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-heart"></i>
+                Favourites
+            </div>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-music"></i>
+                My Playlist
+            </div>
+
+        </div>
+
+        <div class="buzz-link">
+            <h3>Buzz</h3>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-star"></i>
+                Recommended
+            </div>
+        </div>
+
+        <div class="podcast-link">
+            <h3>Podcast</h3>
+            <div class="sidebar-link">
+                <i class="fa-solid fa-r"></i>
+                Recommended
+            </div>
+        </div>
+    </div>
+
+    <div>
+           <h1  class="page-title">MADE FOR YOU</h1>
+       </div>
+
+       <div class="page-entity">
+           <div class="left-section">
+
+            <div class="download-button">
+                <i class="fa-solid fa-download" class="download-icon"></i>
+                <div class="tooltip">download</div>
+            </div>
+               <div class="play-button" id="audio123456" onclick="toggleMusicPlay('audio123456')">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon1"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+
+           </div>
+           <audio id="mySong1">
+            <source src="Songs/Gyakie - Forever (Official Music Video)(MP3_128K).mp3" >
+           </audio>
+
+           <script>
+                let mySong1 = document.getElementById("mySong1");
+                let icon1 =document.getElementById("icon1");
+
+                icon1.onclick =function(){
+                if (mySong1.paused){
+                    mySong1.play();
+                    icon1.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong1.pause();
+                    icon1.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+            }
+           </script>
+
+           <div class="middle-section">
+               <div>
+                    <p><span class="song-title">Forever</span></p>
+                    <p><span class="song-writer">Gyaki</span></p>
+                        <!-- <i class="fa-solid fa-headphones"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                        <i class="fa-solid fa-message"></i> -->
+                    
+               </div>
+               
+                <p class="type-of-song"> #AfroBeats </p>
+               
+           </div>
+
+           <div class="right-section">
+            <div class="add-button">
+                <i class="fa-solid fa-plus" class="add-icon" ></i>
+                <div class="tooltip">add playlist</div>
+             </div>
+               <div class="share-button">
+                   <i class="fa-solid fa-share" class="share-icon" ></i>
+                   <div class="tooltip">share</div>
+                </div>
+                <div class="more-button">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more-icon" onclick="sidebar()"></i>
+                    <div class="tooltip">more</div>
+                 </div>
+
+               <p>3:19</p>
+
+           </div>
+       </div>
+       <hr>
+
+       <div class="page-entity">
+           <div class="left-section">
+               <div class="download-button">
+                   <i class="fa-solid fa-download" class="download-icon"></i>
+                   <div class="tooltip">download</div>
+               </div>
+
+               <div class="play-button">
+                <i class="fa-solid fa-play" class="play-icon" id="icon2"></i> 
+               <div class="tooltip">play</div>
+           </div>
+
+           </div>
+           <audio id="mySong2">
+            <source src="Songs/Doja Cat - Agora Hills (Lyrics)(M4A_128K).mp3" 
+            >
+           </audio>
+
+           <script>
+            var mySong2 = document.getElementById("mySong2");
+            var icon2 =document.getElementById("icon2");
+
+            icon2.onclick =function(){
+            if (mySong2.paused){
+            mySong2.play();
+            icon2.innerHTML = `
+            <i class="fa-solid fa-pause" ></i>
+            `;
+            }else{
+             mySong2.pause();
+             icon2.innerHTML = `
+             <i class="fa-solid fa-play" ></i>
+            `;
+          }
+        }
+           </script>
+           
+           <div class="middle-section">
+            <div>
+                <p><span class="song-title">Agora Hills</span></p>
+               <p><span class="song-writer">Doja Cat</span></p>
+              
+            </div>
+                <p class="type-of-song"> #UrbanHits </p>
+            
+           </div>
+
+           <div class="right-section">
+            <div class="add-button">
+                <i class="fa-solid fa-plus" class="add-icon" ></i>
+                <div class="tooltip">add playlist</div>
+             </div>
+               <div class="share-button">
+                <i class="fa-solid fa-share" class="share-icon" ></i>
+                    <div class="tooltip">share</div>
+                </div>
+                <div  class="more-button" >
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                    <div class="tooltip">more</div>
+                    
+                 </div>
+                <p>4:25</p>
+           </div>
+       </div>
+       <hr>
+
+       <div class="page-entity">
+           <div class="left-section">
+            <div class="download-button">
+                <i class="fa-solid fa-download" class="download-icon"></i>
+                <div class="tooltip">download</div>
+            </div>
+
+            <div class="play-button" onclick="toggleMusicPlay('song2022')">
+                <i class="fa-solid fa-play" class="play-icon" id="icon3"></i> 
+               <div class="tooltip">play</div>
+           </div>
+
+           </div>
+
+           <audio id="mySong3">
+            <source src="Songs/YNW Melly -  Suicidal [Official Video](M4A_128K).mp3"
+            >
+           </audio>
+
+           <script>
+            var mySong3 = document.getElementById("mySong3");
+            var icon3 =document.getElementById("icon3");
+
+            icon3.onclick =function(){
+                if (mySong3.paused){
+                    mySong3.play();
+                    icon3.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong3.pause();
+                    icon3.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+            }
+           </script>
+           
+           <div class="middle-section">
+            <div>
+                <p><span class="song-title">Suicidal</span></p>
+               <p><span class="song-writer">YNW Melly</span></p>
+               
+            </div>
+            <p class="type-of-song"> #HipHop </p>
+           </div>
+
+           <div class="right-section">
+            <div class="add-button">
+                <i class="fa-solid fa-plus" class="add-icon" ></i>
+                <div class="tooltip">add playlist</div>
+             </div>
+
+               <div class="share-button">
+                <i class="fa-solid fa-share" class="share-icon" ></i>
+                    <div class="tooltip">share</div>
+                </div>
+                <div class="more-button">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                    <div class="tooltip">more</div>
+                 </div>
+                <p>3:44</p>
+
+           </div>
+       </div>
+       <hr>
+
+       <div class="page-entity">
+           <div class="left-section">
+            <div class="download-button">
+                <i class="fa-solid fa-download" class="download-icon"></i>
+                <div class="tooltip">download</div>
+            </div>
+
+              <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon4"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+           </div>    
+           <audio id="mySong4">
+            <source src="Songs/Diamond Platnumz - Yatapita (Official Lyric Audio)(MP3_128K).mp3"
+            >
+           </audio>
+
+           <script>
+            var mySong4 = document.getElementById("mySong4");
+            var icon4 =document.getElementById("icon4");
+
+            icon4.onclick =function(){
+                if (mySong4.paused){
+                    mySong4.play();
+                    icon4.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong4.pause();
+                    icon4.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+            }
+           </script>
+           <div class="middle-section">
+            <div>
+                <p><span class="song-title">Diamond Platnumz- Yatapita Review</span></p>
+               <p><span class="song-writer">Diamond Platnumz</span></p>
+              
+            </div>
+            <p class="type-of-song"> #Bongo </p>
+
+           </div>
+
+           <div class="right-section">
+            <div class="add-button">
+                <i class="fa-solid fa-plus" class="add-icon" ></i>
+                <div class="tooltip">add playlist</div>
+             </div>
+
+               <div class="share-button">
+                <i class="fa-solid fa-share" class="share-icon" ></i>
+                    <div class="tooltip">share</div>
+                </div>
+                <div class="more-button">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                    <div class="tooltip">more</div>
+                 </div>
+                <p>5:27</p>
+           </div>
+       </div>
+       <hr>
+
+       <div class="page-entity">
+           <div class="left-section">
+            <div class="download-button">
+                <i class="fa-solid fa-download" class="download-icon"></i>
+                <div class="tooltip">download</div>
+            </div>
+
+            <div class="play-button">
+                <i class="fa-solid fa-play" class="play-icon" id="icon5"></i> 
+               <div class="tooltip">play</div>
+           </div>
+
+           </div>
+           
+           <audio id="mySong5">
+            <source src="Songs/Vybz Kartel, Wiz Kid - Wine To The Top (Official Music Video)_uxq-S07Rc9U.mp3"
+            >
+           </audio>
+
+           <script>
+            var mySong5 = document.getElementById("mySong5");
+            var icon5 =document.getElementById("icon5");
+
+            icon5.onclick =function(){
+                if (mySong5.paused){
+                    mySong5.play();
+                    icon5.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong5.pause();
+                    icon5.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+            }
+           </script>
+
+           <div class="middle-section">
+            <div>
+                <p><span class="song-title">Wine To The Top</span></p>
+               <p><span class="song-writer">Vybz Kartel ft Wiz Kid</span></p>
+               
+            </div>
+            <p class="type-of-song"> #DanceHall </p>
+           </div>
+
+           <div class="right-section">
+            <div class="add-button">
+                <i class="fa-solid fa-plus" class="add-icon" ></i>
+                <div class="tooltip">add playlist</div>
+             </div>
+
+               <div class="share-button">
+                <i class="fa-solid fa-share" class="share-icon" ></i>
+                    <div class="tooltip">share</div>
+                </div>
+                <div class="more-button">
+                    <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                    <div class="tooltip">more</div>
+                 </div>
+                <p>3:00</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon6"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong6">
+                <source src="Songs/Fifth Harmony - Work from Home (Official Video) ft. Ty Dolla ign(1).mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong6 = document.getElementById("mySong6");
+                var icon6 =document.getElementById("icon6");
+    
+                icon6.onclick =function(){
+                    if (mySong6.paused){
+                        mySong6.play();
+                        icon6.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong6.pause();
+                    icon6.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Work From Home</span></p>
+                    <p><span class="song-writer">Fifth Harmony</span></p>
+                    
+                </div>
+                <p  class="type-of-song"> #UrbanHits </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:39</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon7"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong7">
+                <source src="Songs/Mabel - Don_t Call Me Up (Lyrics)(MP3_128K).mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong7 = document.getElementById("mySong7");
+                var icon7 =document.getElementById("icon7");
+    
+                icon7.onclick =function(){
+                    if (mySong7.paused){
+                        mySong7.play();
+                        icon7.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong7.pause();
+                    icon7.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Don't Call Me Up</span></p>
+                <p><span class="song-writer">Mabel</span></p>
+                
+                </div>
+                <p class="type-of-song"> #Pop </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>2:58</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon8"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong8">
+                <source src="Songs/Rayvanny Ft Mayorkun - GimmiDat (Official Music Video)(M4A_128K).mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong8 = document.getElementById("mySong8");
+                var icon8 =document.getElementById("icon8");
+    
+                icon8.onclick =function(){
+                    if (mySong8.paused){
+                        mySong8.play();
+                        icon8.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong8.pause();
+                    icon8.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">GimmiDat</span></p>
+                <p><span class="song-writer">Rayvanny ft Mayorkun</span></p>
+               
+                </div>
+                <p class="type-of-song"> #Bongo </p>
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:36</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon9"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong9">
+                <source src="Songs/We Don_t Care - Rj The Dj ft Meddy _ Rayvanny (Official Video)(M4A_128K).mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong9 = document.getElementById("mySong9");
+                var icon9 =document.getElementById("icon9");
+    
+                icon9.onclick =function(){
+                    if (mySong9.paused){
+                        mySong9.play();
+                        icon9.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong9.pause();
+                    icon9.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">We Don't Care</span></p>
+                <p><span class="song-writer">Rj The Dj ft Meddy ft Rayvanny</span></p>
+               
+                </div>
+                <p class="type-of-song"> #Bongo </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>2:51</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon10"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong10">
+                <source src="Songs/Rita Ora - Let You Love Me-2.mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong10 = document.getElementById("mySong10");
+                var icon10 =document.getElementById("icon10");
+    
+                icon10.onclick =function(){
+                    if (mySong10.paused){
+                        mySong10.play();
+                        icon10.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong10.pause();
+                    icon10.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Let You Love Me</span></p>
+                <p><span class="song-writer">Rita Ora</span></p>
+                
+                </div>
+                <p class="type-of-song"> #HipHop </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:10</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon11"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong11">
+                <source src="Songs/Central Cee - Doja(1).mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong11 = document.getElementById("mySong11");
+                var icon11 =document.getElementById("icon11");
+    
+                icon11.onclick =function(){
+                    if (mySong11.paused){
+                        mySong11.play();
+                        icon11.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong11.pause();
+                    icon11.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Doja</span></p>
+                <p><span class="song-writer">Central Cee</span></p>
+                
+                </div>
+                <p class="type-of-song"> #HipHop </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>1:45</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon12"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+            </div>
+            <audio id="mySong12">
+                <source src="Songs/Willy Paul - Umeme ( Official Video )(M4A_128K).mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong12 = document.getElementById("mySong12");
+                var icon12 =document.getElementById("icon12");
+    
+                icon12.onclick =function(){
+                    if (mySong12.paused){
+                        mySong12.play();
+                        icon12.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong12.pause();
+                    icon12.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Umeme</span></p>
+                <p><span class="song-writer">Willy Paul</span></p>
+                
+                </div>
+                <p class="type-of-song"> #Bongo </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:52</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon13"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong13">
+                <source src="Songs/Joeboy - Sip (Alcohol) [Lyric Video](MP3_128K).mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong13 = document.getElementById("mySong13");
+                var icon13 =document.getElementById("icon13");
+    
+                icon13.onclick =function(){
+                    if (mySong13.paused){
+                        mySong13.play();
+                        icon13.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong13.pause();
+                    icon13.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Alcohol</span></p>
+                <p><span class="song-writer">JoeBoy</span></p>
+                
+                </div>
+                <p class="type-of-song"> #AfroBeats </p>
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>2:38</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon14"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong14">
+                <source src="Songs/Otile Brown X Harmonize - Woman (Official Music Video) sms skiza 7301951 to 811.mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong14 = document.getElementById("mySong14");
+                var icon14 =document.getElementById("icon14");
+    
+                icon14.onclick =function(){
+                    if (mySong14.paused){
+                        mySong14.play();
+                        icon14.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong14.pause();
+                    icon14.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Woman</span></p>
+                <p><span class="song-writer">Otile Brown X Harmonize</span></p>
+                
+                </div>
+                <p class="type-of-song"> #Bongo </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:29</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon15"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong15">
+                <source src="Songs/Khalid - Better.mp3"
+                >
+               </audio>
+    
+               <script>
+                var mySong15 = document.getElementById("mySong15");
+                var icon15 =document.getElementById("icon15");
+    
+                icon15.onclick =function(){
+                    if (mySong15.paused){
+                        mySong15.play();
+                        icon15.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong15.pause();
+                    icon15.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Better</span></p>
+                <p><span class="song-writer">Khalid</span></p>
+               
+                </div>
+                <p class="type-of-song"> #R&B </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:50</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon16"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+
+            <audio id="mySong16">
+                <source src="Songs/Darassa Feat. Sho Madjozi - I Like It (Official Music Video)(MP3_128K).mp3">
+               </audio>
+    
+               <script>
+                var mySong16 = document.getElementById("mySong16");
+                var icon16 =document.getElementById("icon16");
+    
+                icon16.onclick =function(){
+                    if (mySong16.paused){
+                        mySong16.play();
+                        icon16.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong16.pause();
+                    icon16.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Like It</span></p>
+                <p><span class="song-writer">Darassa ft Sho Madjonzi</span></p>
+                
+                </div>
+                <p class="type-of-song"> #Bongo </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:23</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon17"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            <audio id="mySong17">
+                <source src="Songs/Omah Lay - Understand (Official Music Video)(MP3_128K).mp3">
+               </audio>
+    
+               <script>
+                var mySong17 = document.getElementById("mySong17");
+                var icon17 =document.getElementById("icon17");
+    
+                icon17.onclick =function(){
+                    if (mySong17.paused){
+                        mySong17.play();
+                        icon17.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong17.pause();
+                    icon17.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Understand</span></p>
+                <p><span class="song-writer">Omalay</span></p>
+                
+                </div>
+                <p class="type-of-song"> #AfroBeats </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:07</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon18"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong18">
+                <source src="Songs/Joeboy - Body & Soul.mp3">
+               </audio>
+    
+               <script>
+                var mySong18 = document.getElementById("mySong18");
+                var icon18 =document.getElementById("icon18");
+    
+                icon18.onclick =function(){
+                    if (mySong18.paused){
+                        mySong18.play();
+                        icon18.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong18.pause();
+                    icon18.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Body & Soul</span></p>
+                <p><span class="song-writer">JoeBoy</span></p>
+                
+                </div>
+                <p class="type-of-song"> #AfroBeats </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:14</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon19"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong19">
+                <source src="Songs/FIREBOY DML - VIBRATION.mp3">
+               </audio>
+    
+               <script>
+                var mySong19 = document.getElementById("mySong19");
+                var icon19 =document.getElementById("icon19");
+    
+                icon19.onclick =function(){
+                    if (mySong19.paused){
+                        mySong19.play();
+                        icon19.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong19.pause();
+                    icon19.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Vibration</span></p>
+                <p><span class="song-writer">FireBoy DML</span></p>
+               
+                </div>
+                <p class="type-of-song"> #AfroBeats </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:20</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon20"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong20">
+                <source src="Songs/Jorja Smith - Be Honest (feat. Burna Boy).mp3">
+               </audio>
+    
+               <script>
+                var mySong20 = document.getElementById("mySong20");
+                var icon20 =document.getElementById("icon20");
+    
+                icon20.onclick =function(){
+                    if (mySong20.paused){
+                        mySong20.play();
+                        icon20.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong20.pause();
+                    icon20.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Be Honest</span></p>
+                <p><span class="song-writer">Burna Boy ft Jorja Smith</span></p>
+                
+                </div>
+                <p class="type-of-song"> #AfroBeats </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>4:20</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon21"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong21">
+                <source src="Songs/Ed Sheeran - Castle On The Hill [Official].mp3">
+               </audio>
+    
+               <script>
+                var mySong21 = document.getElementById("mySong21");
+                var icon21 =document.getElementById("icon21");
+    
+                icon21.onclick =function(){
+                    if (mySong21.paused){
+                        mySong21.play();
+                        icon21.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong21.pause();
+                    icon21.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Castle on the Hill</span></p>
+                <p><span class="song-writer">Edsheeran</span></p>
+                
+                </div>
+                <p class="type-of-song"> #Pop </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>4:48</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon22"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong22">
+                <source src="Songs/Maroon 5 - Beautiful Mistakes ft. Megan Thee Stallion.mp3">
+               </audio>
+    
+               <script>
+                var mySong22 = document.getElementById("mySong22");
+                var icon22 =document.getElementById("icon22");
+    
+                icon22.onclick =function(){
+                    if (mySong22.paused){
+                        mySong22.play();
+                        icon22.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong22.pause();
+                    icon22.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Beautiful Mistakes</span></p>
+                <p><span class="song-writer">Maroon 5 ft. Megan Thee Stallion</span></p>
+                
+                </div>
+                <p class="type-of-song"> #RockPop</p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:48</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+               <div class="download-button">
+                   <i class="fa-solid fa-download" class="download-icon"></i>
+                   <div class="tooltip">download</div>
+               </div>
+                
+               <div class="play-button">
+                <i class="fa-solid fa-play" class="play-icon" id="icon23"></i> 
+               <div class="tooltip">play</div>
+           </div>
+
+            </div>
+            
+            <audio id="mySong23">
+                <source src="Songs/Ed Sheeran - Photograph.mp3">
+               </audio>
+    
+               <script>
+                var mySong23 = document.getElementById("mySong23");
+                var icon23 =document.getElementById("icon23");
+    
+                icon23.onclick =function(){
+                    if (mySong23.paused){
+                        mySong23.play();
+                        icon23.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong23.pause();
+                    icon23.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Photograph</span></p>
+                <p><span class="song-writer">Ed Sheeran</span></p>
+               
+                </div>
+                <p class="type-of-song"> #Rockpop </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>4:17</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon24"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong24">
+                <source src="Songs/Conor Maynard - What I Put You Through(MP3_160K).mp3">
+               </audio>
+    
+               <script>
+                var mySong24 = document.getElementById("mySong24");
+                var icon24 =document.getElementById("icon24");
+    
+                icon24.onclick =function(){
+                    if (mySong24.paused){
+                        mySong24.play();
+                        icon24.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong24.pause();
+                    icon24.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">What I Put You Through</span></p>
+                <p><span class="song-writer">Conor Maynard</span></p>
+               
+                </div>
+                <p class="type-of-song"> #RockPop </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:22</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon25"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong25">
+                <source src="Songs/Joy In Chaos - Holy Drill (Lyrics)(M4A_128K).mp3">
+               </audio>
+    
+               <script>
+                var mySong25 = document.getElementById("mySong25");
+                var icon25 =document.getElementById("icon25");
+    
+                icon25.onclick =function(){
+                    if (mySong25.paused){
+                        mySong25.play();
+                        icon25.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong25.pause();
+                    icon25.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Joy In Chaos</span></p>
+                <p><span class="song-writer">Holy Drill</span></p>
+               
+                </div>
+                <p class="type-of-song"> #Drill </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>2:40</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon26"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong26">
+                <source src="Songs/Imagine Dragons - Believer.mp3">
+               </audio>
+    
+               <script>
+                var mySong26 = document.getElementById("mySong26");
+                var icon26 =document.getElementById("icon26");
+    
+                icon26.onclick =function(){
+                    if (mySong26.paused){
+                        mySong26.play();
+                        icon26.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong26.pause();
+                    icon26.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Believer</span></p>
+                <p><span class="song-writer">Imagine Dragons</span></p>
+                
+                </div>
+                <p class="type-of-song"> #RockPop </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:24</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon27"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong27">
+                <source src="Songs/Shakira - Waka Waka (This Time For Africa).mp3">
+               </audio>
+    
+               <script>
+                var mySong27 = document.getElementById("mySong27");
+                var icon27 =document.getElementById("icon27");
+    
+                icon27.onclick =function(){
+                    if (mySong27.paused){
+                        mySong27.play();
+                        icon27.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong27.pause();
+                    icon27.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Waka Waka (This Time For Africa)</span></p>
+                    <p><span class="song-writer">Shakira</span></p>
+                    
+                </div>
+                <p class="type-of-song"> #RockPop </p>
+               
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:30</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="page-entity">
+            <div class="left-section">
+                <div class="download-button">
+                    <i class="fa-solid fa-download" class="download-icon"></i>
+                    <div class="tooltip">download</div>
+                </div>
+                
+                <div class="play-button">
+                    <i class="fa-solid fa-play" class="play-icon" id="icon28"></i> 
+                   <div class="tooltip">play</div>
+               </div>
+
+            </div>
+            
+            <audio id="mySong28">
+                <source src="Songs/Egzod _ Maestro Chives - Royalty (Lyrics) ft. Neoni(MP3_160K).mp3">
+               </audio>
+    
+               <script>
+                var mySong28 = document.getElementById("mySong28");
+                var icon28 =document.getElementById("icon28");
+    
+                icon28.onclick =function(){
+                    if (mySong28.paused){
+                        mySong28.play();
+                        icon28.innerHTML = `
+                    <i class="fa-solid fa-pause" ></i>
+                    `;
+                }else{
+                    mySong28.pause();
+                    icon28.innerHTML = `
+                    <i class="fa-solid fa-play" ></i>
+                    `;
+                }
+                }
+               </script>
+            <div class="middle-section">
+                <div>
+                    <p><span class="song-title">Royalty</span></p>
+                <p><span class="song-writer">Egzod _ Maestro Chives ft. Neoni</span></p>
+                
+                </div>
+                <p class="type-of-song"> #RockPop </p>
+                
+            </div>
+
+            <div class="right-section">
+                <div class="add-button">
+                    <i class="fa-solid fa-plus" class="add-icon" ></i>
+                    <div class="tooltip">add playlist</div>
+                 </div>
+
+                <div class="share-button">
+                    <i class="fa-solid fa-share" class="share-icon" ></i>
+                        <div class="tooltip">share</div>
+                    </div>
+                    <div class="more-button">
+                        <i class="fa-solid fa-ellipsis-vertical" class="more-icon"></i>
+                        <div class="tooltip">more</div>
+                     </div>
+                    <p>3:40</p>
+            </div>
+            <hr>
+        </div>
+        <hr>
+
+        <div class="top-100-songs">
+            <p >Top 100 Songs <span class="icon-arrow">&#62</span></p>
+        </div>
+
+        <script src="playSong.js"></script>
+    </body>
+</html>
+    
