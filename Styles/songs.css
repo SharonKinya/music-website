@@ -15,6 +15,9 @@
     align-items: center;
     flex: 1;
 }
+.middle-section .last-section{
+    text-align: center;
+}
 .song-title,
 .type-of-song {
     font-weight: bold;
