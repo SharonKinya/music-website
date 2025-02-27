@@ -91,8 +91,4 @@ loop.addEventListener("mouseup", dragStop);
 loop.addEventListener("mouseleave", dragStop);
 loop.addEventListener("touchend", dragStop);
 
-let subMenu = document.getElementById("subMenu");
 
-function toggleMenu(){
-    subMenu.classList.toggle("open-menu");
-}

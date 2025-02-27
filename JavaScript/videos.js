@@ -69,7 +69,7 @@ videos.forEach((videoItem, index)  => {
     
         </div>
          `;
-         videoElement.innerHTML = videoDetails;
+         newVideoElement.innerHTML = videoDetails;
          const getElement =  document.querySelector('body');
          getElement.appendChild(videoElement);
 });

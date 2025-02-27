@@ -1,11 +1,11 @@
 
 .sidebar {
-    background-color: rgb(245, 242, 242);
+    background-color: rgb(251, 250, 250);
     color: black;
     left: 0;
     top: 70px;
     width: 200px;
-    height: 580px;
+    height: 590px;
     position: fixed;
     display: flex;
     flex-direction: column;

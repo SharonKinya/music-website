@@ -101,9 +101,3 @@ function toggleVideoPlay(videoItemId) {
     };
 
 
-//more dropdown code
-let subMenu = document.getElementById("subMenu");
-
-function toggleMenu(){
-    subMenu.classList.toggle("open-menu");
-}

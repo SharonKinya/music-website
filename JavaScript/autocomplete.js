@@ -90,5 +90,8 @@ function selectInput(list) {
     inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
 }
+
+
+
  
 

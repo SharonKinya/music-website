@@ -144,20 +144,25 @@ const mySongElement = document.getElementById(`mySong${songId}`);
    if(mySongElement.paused){
     mySongElement.play();
     songIdElement.innerHTML =  `<i class="fa-solid fa-pause" class="play-icon" id="icon1"></i>`;
-   } else {
+
+    
+   } else if(mySongElement.play){
     mySongElement.pause();
     songIdElement.innerHTML =  `<i class="fa-solid fa-play" class="play-icon" id="icon1"></i>`;
+   } else {
+    // mySongElement.pause();
+    songIdElement.innerHTML =  `<i class="fa-solid fa-play" class="play-icon" id="icon1"></i>`;
    };
+
 };
 
 
 
-//more button dropdown
-let subMenu = document.getElementById("subMenu");
 
-function toggleMenu(){
-    subMenu.classList.toggle("open-menu");
-}
+
+
+
+
 
 
 
